@@ -1,3 +1,7 @@
+html {
+font-size: 16px;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -40,7 +44,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
 .my-custom-nav { 
 background-color: var(--secondary-color);
 color: var(--Quaternary-color);
-font-size: 20px;
+font-size: 1.8rem;
 }
 
 /* .nav-link {
@@ -111,7 +115,7 @@ font-size: 20px;
 }
 
 .en {
-   font-size: 25px;
+   font-size: 2.1rem;
 }
 
 .ic {
@@ -119,12 +123,19 @@ font-size: 20px;
    color: var(--Quaternary-color);
 }
 
+#vc {
+margin-top: 10px;
+}
+
 #social-links {
    margin-top: 180px;
+   margin-left: 1.8rem;
    display: flex;
    flex-direction: column;
-   align-items: start;
-   align-content: start;
+/*
+   align-items: center;
+   align-content: center;
+*/
 }
 
 .ro {
@@ -200,7 +211,7 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
   padding: 15px 25px;
   border-radius: 5px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.5rem;
    animation: zoomIn 0.6s ease-out forwards;
 }
 
@@ -221,6 +232,8 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
 }
 
 #intro {
+   max-width: 100vw;
+   width: 89%;
    margin-top: 50px;
    margin-left: 20px;
    display: flex;
@@ -238,19 +251,25 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
 }
 
 #intro-para {
+   font-size: 1.3rem;
    margin-top: 30px;
    color: var(--Quaternary-color);
    text-align: justify;
 }
 
 .wb {
-   font-size: 21px;
+   font-size: 1.5rem;
    color: var(--Quaternary-color);
    margin-left: 0px;
 }
 
 .mts {
    color: var(--Quaternary-color);
+   font-size: 2.6rem;
+}
+
+.head-para {
+   font-size: 1.7rem;
 }
 
 #introsect1 {
@@ -265,7 +284,8 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
 #vc2 {
    position: absolute;
    top: 180px;
-   height: 500px;
+   max-height: 720px;
+   height: 75%;
    margin-bottom: 80px;
 }
 
@@ -281,7 +301,8 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.228);
 
 #cm {
    display: none;
-   height: 160px;
+   max-height: 210px;
+   height: 90%;
    margin-top: 0px;
    margin-left: 80px;
    animation: zoomIn2 0.6s ease-out forwards;
@@ -316,8 +337,10 @@ main {
 }
 
 #skills-box {
-   height: 484px;
-   width: 1050px;
+   max-height: 504px;
+   height: 98%;
+   max-width: 1050px;
+   width: 100%;
    margin-top: 40px;
    border-radius: 10px;
    border: 2px solid var(--Quaternary-color);
@@ -336,6 +359,7 @@ main {
 }
 
 .skill-paras {
+   font-size: 1.1rem;
    color: var(--Quaternary-color);
    text-align: justify;
 }
@@ -368,6 +392,7 @@ main {
 
 .ftd2 {
    color: var(--Tertiary-color);
+   font-size: 1.8rem;
 }
 
 #skill-images {
@@ -390,14 +415,14 @@ img {
 }
 
 #two {
-   top: 73px;
+   top: 78px;
    height: 341px;
    opacity: 0;
    z-index: 8;
 }
 
 #three {
-   bottom: 175px;
+   bottom: 185px;
    left: 63px;
    height: 380px;
    opacity: 0;
@@ -447,8 +472,10 @@ img {
 }
 
 .fd {
-   width: 180px;
-   margin-top: 60px;
+   padding-left: 1rem;
+   max-width: 240px;
+   width: 100%;
+   margin-top: 40px;
    text-align: center;
    z-index: 9;
    transition: all 0.3s ease;
@@ -463,7 +490,7 @@ img {
 
 #cir {
    position: absolute;
-   top: 36px;
+   top: 20px;
    left: 168px;
    height: 70px;
    width: 70px;
@@ -494,13 +521,13 @@ img {
 
 .t {
    margin-top: 20px;
-   width: 280px;
+   width: 580px;
 }
 
 #work-box {
    margin-top: 40px;
    margin-right: 120px;
-   height: 100vh;
+   height: 80vh;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -561,7 +588,6 @@ transition: all 0.6s ease;
 
 #w2 {
    height:300px;
-   box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.228);
 }
 
 #contact {
@@ -639,7 +665,7 @@ transition: all 0.6s ease;
 }
 
 #btn {
-   margin-top: 20px;
+   margin-top: 10px;
    margin-left: 390px;
    width: 120px;
    height: 40px;
@@ -673,7 +699,12 @@ transition: all 0.6s ease;
     25%, 75% { opacity: 0; }
   }
   
+  .ne {
+   font-size: 1.2rem;  
+  }
+  
   .m {
+   font-size: 1.2rem;
    margin-top: 36px;
   }
 
